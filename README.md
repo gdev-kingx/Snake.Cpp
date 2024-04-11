@@ -1,4 +1,4 @@
-##For Mac users
+## For Mac users
 
 To run the main.cpp file
 1. In the terminal go to ur src folder where the main.cpp file is stored
@@ -10,7 +10,7 @@ To run the main.cpp file
    ```
    ./main
    ```
-##For Windows users
+## For Windows users
 
 1. Change the include line to
    ```
