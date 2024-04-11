@@ -1,3 +1,7 @@
+# Snake Game in C++ using ncurses
+
+The Snake game created using C++ and ncurses playable in the cmd
+
 ## For Mac users
 
 To run the main.cpp file
