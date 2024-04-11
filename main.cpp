@@ -47,21 +47,21 @@ void Draw() {
         for (int j = 0; j < width + 2; j++)
         {
             if (i == 0 || i == 21) {
-                attron(COLOR_PAIR(4)); // Blue color for Horizontal border
+                attron(COLOR_PAIR(2)); // Green color for Horizontal border
                 mvprintw(i, j, "#");
-                attroff(COLOR_PAIR(4));
+                attroff(COLOR_PAIR(2));
             } else if (j == 0 || j == 21){
-                attron(COLOR_PAIR(4)); // Blue color for Vertical border
+                attron(COLOR_PAIR(2)); // Green color for Vertical border
                 mvprintw(i, j, "+");
-                attroff(COLOR_PAIR(4));
+                attroff(COLOR_PAIR(2));
             } else if (i == y && j == x) {
                 attron(COLOR_PAIR(1)); // Red color for snake's head
                 mvprintw(i, j, "H");
                 attroff(COLOR_PAIR(1));
             } else if (i == FruitY && j == FruitX) {
-                attron(COLOR_PAIR(2)); // Green color for fruit
+                attron(COLOR_PAIR(4)); // Blue color for fruit
                 mvprintw(i, j, "0");
-                attroff(COLOR_PAIR(2));
+                attroff(COLOR_PAIR(4));
             } else
                 for (int k = 0; k < nTail; k++) {
                     if (TailX[k] == j && TailY[k] == i) {
