@@ -2,7 +2,7 @@
 #include <ncurses.h>
 
 bool gameOver;
-const int width = 20, height = 20;
+const int width = 30, height = 30;
 int x, y, FruitX, FruitY, score;
 enum eDirection { STOP = 0, LEFT, RIGHT, UP, DOWN };
 eDirection dir;
