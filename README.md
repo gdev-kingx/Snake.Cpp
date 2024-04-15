@@ -30,5 +30,5 @@ To run the main.cpp file
    ./main
    ```
 
-##Output
-![Snake](snake.png)
+## Output
+![Snake](./snake.png)
