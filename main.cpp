@@ -141,30 +141,30 @@ void Input() {
   int c = getch();
 
   switch (c) {
-  case KEY_LEFT:
-    if (dir != RIGHT)
-      dir = LEFT;
-    break;
-  case KEY_RIGHT:
-    if (dir != LEFT)
-      dir = RIGHT;
-    break;
-  case KEY_UP:
-    if (dir != DOWN)
-      dir = UP;
-    break;
-  case KEY_DOWN:
-    if (dir != UP)
-      dir = DOWN;
-    break;
-  case 'p':
-  case 'P':
-    gamePaused = !gamePaused;
-    break;
-  case 'q':
-  case 'Q':
-    gameOver = true;
-    break;
+    case KEY_LEFT:
+      if (dir != RIGHT)
+        dir = LEFT;
+      break;
+    case KEY_RIGHT:
+      if (dir != LEFT)
+        dir = RIGHT;
+      break;
+    case KEY_UP:
+      if (dir != DOWN)
+        dir = UP;
+      break;
+    case KEY_DOWN:
+      if (dir != UP)
+        dir = DOWN;
+      break;
+    case 'p':
+    case 'P':
+      gamePaused = !gamePaused;
+      break;
+    case 'q':
+    case 'Q':
+      gameOver = true;
+      break;
   }
 }
 
@@ -186,20 +186,20 @@ void Logic() {
   }
 
   switch (dir) {
-  case LEFT:
-    x--;
-    break;
-  case RIGHT:
-    x++;
-    break;
-  case UP:
-    y--;
-    break;
-  case DOWN:
-    y++;
-    break;
-  default:
-    break;
+    case LEFT:
+      x--;
+      break;
+    case RIGHT:
+      x++;
+      break;
+    case UP:
+      y--;
+      break;
+    case DOWN:
+      y++;
+      break;
+    default:
+      break;
   }
 
   if (x > width || x < 1 || y > height || y < 1) {
@@ -243,15 +243,15 @@ void Logic() {
   }
 
   switch (difficulty) {
-  case 1:
-    halfdelay(1); // Normal speed
-    break;
-  case 2:
-    halfdelay(2); // Easy speed (slower)
-    break;
-  case 3:
-    halfdelay(1); // Hard speed (faster)
-    break;
+    case 1:
+      halfdelay(1); // Normal speed
+      break;
+    case 2:
+      halfdelay(2); // Easy speed (slower)
+      break;
+    case 3:
+      halfdelay(1); // Hard speed (faster)
+      break;
   }
 }
 
@@ -308,17 +308,17 @@ void ChooseDifficulty() {
   mvprintw(14, 10, "3. Hard");
   int choice = getch();
   switch (choice) {
-  case '1':
-    difficulty = 1;
-    break;
-  case '2':
-    difficulty = 2;
-    break;
-  case '3':
-    difficulty = 3;
-    break;
-  default:
-    difficulty = 1; // Default to normal difficulty
-    break;
+    case '1':
+      difficulty = 1;
+      break;
+    case '2':
+      difficulty = 2;
+      break;
+    case '3':
+      difficulty = 3;
+      break;
+    default:
+      difficulty = 1; // Default to normal difficulty
+      break;
   }
 }
