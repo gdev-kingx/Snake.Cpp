@@ -31,4 +31,4 @@ To run the main.cpp file
    ```
 
 ##Output
-[![Snake](snake.png)]
+![Snake](snake.png)
